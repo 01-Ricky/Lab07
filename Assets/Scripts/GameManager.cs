@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     {
         thisManager = this;
         Time.timeScale = 0;
+        Score = 0;
     }
 
     void Update()

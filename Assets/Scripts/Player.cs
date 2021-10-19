@@ -29,11 +29,22 @@ public class Player : MonoBehaviour
 
             Jump();
         }
-       
+        if(transform.position.y <=-3.7 || transform.position.y >= 3.7)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
     private void Jump()
     {
         rb.velocity = Vector2.up * jumpforce;
 
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag=="Wall")
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }
