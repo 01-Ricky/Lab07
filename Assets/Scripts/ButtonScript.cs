@@ -9,4 +9,16 @@ public class ButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+    public void StartButton()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+    public void BackButton()
+    {
+        SceneManager.LoadScene("Main");
+    }
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
 }

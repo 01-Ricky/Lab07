@@ -13,5 +13,8 @@ public class Obstacle : MonoBehaviour
             Destroy(gameObject);
         else
             transform.Translate(Vector3.right * Time.deltaTime * -Speed);
+
+       
     }
+
 }
